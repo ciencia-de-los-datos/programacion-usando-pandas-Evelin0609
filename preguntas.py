@@ -26,6 +26,7 @@ def pregunta_01():
 
 
 def pregunta_02():
+
     """
     ¿Cuál es la cantidad de columnas en la tabla `tbl0.tsv`?
 
@@ -67,7 +68,8 @@ def pregunta_04():
     E    4.785714
     Name: _c2, dtype: float64
     """
-    return tbl0.groupby('_c1')['_c1'].mean()
+    promedio = tbl0.groupby('_c1')['_c1'].mean()
+    return promedio
 
 
 def pregunta_05():
